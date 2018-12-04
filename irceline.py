@@ -154,7 +154,7 @@ class IrcelineSensor(Entity):
         import datetime
         """Return the state of the device."""
         _LOGGER.debug("Get state for %s", self._friendly_name)
-        if self._last_update + datetime.timedelta(minutes=self._refresh_rate) < datetime.datetime.now()
+        if self._last_update + datetime.timedelta(minutes=self._refresh_rate) < datetime.datetime.now():
             self.update()
 
         return self._data
