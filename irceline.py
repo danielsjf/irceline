@@ -39,8 +39,8 @@ SENSOR_TYPES_NAMES = {
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Optional(CONF_NAME, default = None): cv.string,
-    vol.Optional(CONF_LATITUDE, default = None): cv.latitude,
-    vol.Optional(CONF_LONGITUDE, default = None): cv.longitude,
+    vol.Optional(CONF_LATITUDE, default = 50): cv.latitude,
+    vol.Optional(CONF_LONGITUDE, default = 5): cv.longitude,
     vol.Optional(CONF_MONITORED_CONDITIONS, default = list(SENSOR_TYPES)):
         vol.All(cv.ensure_list, [vol.In(SENSOR_TYPES)]),
     vol.Optional(CONF_REFRESH, default = 60): cv.positive_int,
