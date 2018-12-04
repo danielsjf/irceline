@@ -9,8 +9,8 @@ Next, add the following lines to your `configuration.yaml`:
 sensor:
   - platform: irceline
     name: (optional) Name of the station
-    lat: (optional) Latitude of your location (will find the closest station)
-    lon: (optional) Longitude of your location (will find the closest station)
+    latitude: (optional) Latitude of your location (will find the closest station)
+    longitude: (optional) Longitude of your location (will find the closest station)
     monitored_conditions:
       - temperature
       - co2
