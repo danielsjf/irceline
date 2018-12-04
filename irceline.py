@@ -13,7 +13,7 @@ from homeassistant.helpers.entity import Entity
 
 CONF_REFRESH = "refresh_rate"
 
-REQUIREMENTS = ['airqdata==0.1']
+REQUIREMENTS = ['airqdata==0.2']
 
 _LOGGER = logging.getLogger(__name__)
 
