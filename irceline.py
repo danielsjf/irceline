@@ -73,6 +73,8 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
         lat = config.get(CONF_LATITUDE)
         lon = config.get(CONF_LONGITUDE)
 
+    _LOGGER.debug("Setting station is %s", name)
+
     devs = []
 
     for indicator in config[CONF_MONITORED_CONDITIONS]:
